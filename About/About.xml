@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Maid Uniforms</name>
+    <author>NotFunNy</author>
+    <packageId>NotFunNy.MaidUniforms</packageId>
+    <description>Maid Uniforms man.</description>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+</ModMetaData> 

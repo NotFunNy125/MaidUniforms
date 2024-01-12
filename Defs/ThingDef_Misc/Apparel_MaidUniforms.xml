@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CleanerMaid</defName>
+    <label>Cleaner Maid Uniform</label>
+    <description>A simple Maid Uniform</description>
+    <recipeMaker>
+        <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+        <texPath>Things/Pawn/Humanlike/Apparel/Maid/Cleaner/CleanerMaid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>85</costStuffCount>
+    <stuffCategories>
+        <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+        <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToMake>4000</WorkToMake>
+        <Mass>0.75</Mass>
+        <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+        <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MoveSpeed>0.02</MoveSpeed>
+        <Beauty>0.02</Beauty>
+        <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+        <CarryingCapacity>35</CarryingCapacity>
+        <SocialImpact>0.25</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+        <bodyPartGroups>
+            <li>Torso</li>
+            <li>Shoulders</li>
+        </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Maid/Cleaner/CleanerMaid</wornGraphicPath>
+        <layers>
+            <li>Shell</li>
+        </layers>
+        <tags>
+            <li>IndustrialBasic</li>
+        </tags>
+        <defaultOutfitTags>
+            <li>Worker</li>
+        </defaultOutfitTags>
+        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <tradeTags>
+        <li>BasicClothing</li>
+    </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>Apparel_FighterMaid</defName>
+        <label>Combat Maid Uniform</label>
+        <description>A Maid Uniform with integrated armor for Fighting</description>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+                <skillRequirements>
+                    <Crafting>6</Crafting>
+                </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Maid/Fighter/FighterMaid</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Cloth>80</Cloth>
+            <Steel>100</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Plasteel>10</Plasteel>
+          </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+            <Mass>2.25</Mass>
+            <Flammability>0.6</Flammability>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.15</ArmorRating_Heat>
+            <Insulation_Cold>12</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.08</MoveSpeed>
+            <Beauty>0.01</Beauty>
+            <CarryingCapacity>25</CarryingCapacity>
+            <SocialImpact>0.10</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+                <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Maid/Fighter/FighterMaid</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>IndustrialAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>Clothing</li>
+            <li>Armor</li>
+        </tradeTags>
+        </ThingDef>
+</Defs>
