@@ -41,6 +41,7 @@
             <li>Shoulders</li>
         </bodyPartGroups>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Maid/Cleaner/CleanerMaid</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
         <layers>
             <li>Shell</li>
         </layers>
